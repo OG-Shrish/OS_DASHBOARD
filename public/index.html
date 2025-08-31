@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OS Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>OS Resource Dashboard</h1>
+    <p class="sub">Node.js + Vanilla JS • Docker-ready • Non-root</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h3>CPU</h3>
+      <p id="cpuModel">—</p>
+      <p><b>Load:</b> <span id="cpuLoad">0</span>%</p>
+      <canvas id="cpuChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>Memory</h3>
+      <p><b>Used:</b> <span id="memUsed">—</span> / <span id="memTotal">—</span></p>
+      <canvas id="memChart"></canvas>
+    </div>
+
+    <div class="card">
+      <h3>System</h3>
+      <p><b>OS:</b> <span id="osInfo">—</span></p>
+      <p><b>Cores:</b> <span id="cores">—</span></p>
+      <p><b>Uptime:</b> <span id="uptime">—</span></p>
+    </div>
+  </section>
+
+  <section class="card full">
+    <h3>Disks</h3>
+    <table id="fsTable">
+      <thead><tr><th>Mount</th><th>Used</th><th>Total</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <footer>
+    <small>© Abhijeet • OS Dashboard</small>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
