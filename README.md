@@ -12,12 +12,12 @@ A simple **Operating System Dashboard** built with **Node.js + Express.js** that
 - Lightweight and fast.
 
 ## How to Run
-git clone https://github.com/ABHI2005jeet/os-dashboard.git
-cd os-dashboard
+git clone https://github.com/OG-Shrish/OS_DASHBOARD.git
+cd OS_DASHBOARD
 npm install
 node server.js
-Open in browser:
-👉 http://localhost:8080
+open your browser:->
+http://localhost:8080
 
  ## 🛠 Tech Stack
 - **Backend:** Node.js, Express.js  
